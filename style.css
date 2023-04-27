@@ -271,6 +271,16 @@ td, th{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 912px){
+    .caja, .mapa-contenido, .principal{
+        width: auto;
+    }
 
+    .caja img{
+        margin-left: 10%;
+    }
+
+    .caja nav{
+        right: 15%;
+    }
 }
