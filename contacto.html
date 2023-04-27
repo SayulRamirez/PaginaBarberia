@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Barberia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1>  <!-- Se debe usar la proíedad alt en las imagenes por si hay mala conexión y no carga bien-->
+                <img src="imagenes/logo.png" alt="Logo de la Barberia Alura">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenido-formulario">  <!-- Para crear un formulario existe la etiqueta form -->
+        <form>
+            <!-- La etiqueta label e input deben de ir "casados"-->
+            <!-- se usa un id en el input y este mismo se usa con un for en el label-->
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <!-- Se debe indicar el tipo de dato que recogera el input-->
+            <input type="text" id="nombreapellido" class="input-padron" required>
+            
+            <label for="correoelectronico">Correo electrónico</label> <!--required se usa para marcar datos obligatorios-->
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <!--label es una etiqueta que sirve de guia para llenar el formulario-->
+            <label for="telefono">Teléfono</label>  <!--placeholder se usa para ayudar al usuario con el llenado del formulario con los datos correctos-->
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) - XX XXX XXX">
+            
+            <!-- En el text-area igualmente se deben casar-->
+            <label for="mensaje">Mensaje</label>
+            <!-- Para manipular el tamaño por defecto se usa el número de columnas y filas-->
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <!--fieldset se usa para dividir los diferentes elementos del formulario, es como un "div" pero especifico del formulario-->
+            <fieldset>
+
+                <!--legend es como la etiqueta "p" pero es especifica de los formularios-->
+                <legend>¿Cómo le gustaría que le contactaramos?</legend>
+    
+                <!-- Igualmente casamiento, se acostumbra a darle un "valor"-->
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <!-- Para que pertenezcan a la misma "familia" deben de tener
+                 un nombre igual a todos los input-radio que necesite-->
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+
+                <!--para que la marca aparezca antes que la etiquta se implenta el label->input->nombre en la etiqueta-->
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+            <legend>¿En qué horario quiere ser atendido?</legend>
+            <!--select se usa para crear varias opciones-->
+            <select>  <!--dentro con la etiqueta option se ingresan las opciones a elegir-->
+                <option>En la mañana</option>
+                <option>En la tarde</option>
+                <option>En la noche</option>
+            </select>
+            </fieldset>
+
+            <!--checked se usa para marcar alcuna casilla por deful se implementa en la casilla deseada-->
+            <label class="check-box"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+
+            <!-- Para crear un boton se usa el input type "submit" y el value es el nombre con el que aparece-->
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <!--Para la creación de tablas se usa la etiqueta table-->
+        <table>
+            <!--thead vendria a se la etiqueta header-->
+            <thead> <!--Dentro va la fila padrón-->
+                <tr> <!--Indica la fila-->
+                    <th>Día</th> <!--Indica el valor en cada columa de la misma fila-->
+                    <th>Horario</th> <!--Esta etiqueta es especifica del encabezado-->
+                </tr>
+            </thead>
+
+            <tbody> <!--Indica el cuerpo de la tabla-->
+                <tr>
+                    <td>Lunes</td>
+                    <td>08:00 a 20:00</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08:00 a 20:00</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00 a 20:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </main>
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+        <p class="copyright">&copy; Copyright Barbería Alura - 2023</p>
+    </footer>
+</body>
