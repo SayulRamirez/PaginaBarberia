@@ -270,7 +270,7 @@ td, th{
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:722px){
 
     .caja, .mapa-contenido, .principal{
         width: auto;
@@ -281,8 +281,8 @@ td, th{
     }
 
     .caja nav{
-        top: 10%;
-        right: 10%;
+        top: 40%;
+        right: 2%;
     }
 }
 
