@@ -253,3 +253,19 @@ td, th{
     width: 560px;
     margin: 2em auto 0 auto;
 }
+
+/*Diseño Responsive de la página */
+
+@media screen and (min-width: 768px){
+    .caja, .mapa-contenido, .principal{
+        width: auto;
+    }
+
+    .caja img{
+        margin: 10%;
+    }
+
+    .caja nav{
+        right: 10%;
+    }
+}
