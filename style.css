@@ -256,7 +256,21 @@ td, th{
 
 /*Diseño Responsive de la página */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width:930px){
+    .caja, .mapa-contenido, .principal{
+        width: auto;
+    }
+
+    .caja img{
+        margin-left: 10%;
+    }
+
+    .caja nav{
+        right: 15%;
+    }
+}
+
+@media screen and (max-width:700px){
 
     .caja, .mapa-contenido, .principal{
         width: auto;
@@ -272,16 +286,3 @@ td, th{
     }
 }
 
-@media screen and (max-width: 930px){
-    .caja, .mapa-contenido, .principal{
-        width: auto;
-    }
-
-    .caja img{
-        margin-left: 10%;
-    }
-
-    .caja nav{
-        right: 15%;
-    }
-}
