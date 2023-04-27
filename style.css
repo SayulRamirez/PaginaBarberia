@@ -257,6 +257,7 @@ td, th{
 /*Diseño Responsive de la página */
 
 @media screen and (max-width:930px){
+    /*Página HOME*/
     .caja, .mapa-contenido, .principal{
         width: auto;
     }
@@ -268,26 +269,45 @@ td, th{
     .caja nav{
         right: 15%;
     }
+
+    /*Página productos*/
+
+    .productos{
+        width: auto;
+        padding: 10% 0;
+    }
+
+    .productos li{
+        display: block;
+        margin: 0 auto 5% auto;
+        width: 40%;
+    }
 }
 
 @media screen and (max-width:722px){
-
+    /*Página HOME*/
     .caja, .mapa-contenido, .principal{
         width: auto;
     }
 
     .caja img{
-        margin: 10%;
+        margin: 0;
     }
 
     .caja nav{
         top: 40%;
         right: 2%;
     }
+
+    /*Página productos*/
+
+    .productos li{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:540px){
-
+    /*Página HOME*/
     .caja{
         text-align: center;
     }
@@ -316,6 +336,12 @@ td, th{
 
     .imagendiferencial{
         margin: 5% 0 5% 0;
+    }
+
+    /*Página productos*/
+
+    .productos img{
+        width: 100%;
     }
 }
 
