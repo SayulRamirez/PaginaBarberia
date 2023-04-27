@@ -256,7 +256,7 @@ td, th{
 
 /*Diseño Responsive de la página */
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .caja, .mapa-contenido, .principal{
         width: auto;
     }
@@ -267,5 +267,10 @@ td, th{
 
     .caja nav{
         right: 10%;
+        margin-top: 10%;
     }
+}
+
+@media screen and (max-width: 900px){
+
 }
