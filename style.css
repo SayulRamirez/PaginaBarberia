@@ -286,3 +286,36 @@ td, th{
     }
 }
 
+@media screen and (max-width:540px){
+
+    .caja{
+        text-align: center;
+    }
+
+    .caja img{
+        margin: 0;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .portada{
+        height: auto;
+    }
+
+    .contenido-diferenciales, .video{
+        width: auto;
+        text-align: center;
+    }
+
+    .items{
+        display: block;
+        margin: auto;
+    }
+
+    .imagendiferencial{
+        margin: 5% 0 5% 0;
+    }
+}
+
