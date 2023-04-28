@@ -343,5 +343,11 @@ td, th{
     .productos img{
         width: 100%;
     }
+
+    /*Página contacto*/
+
+    .enviar{
+        width: auto;
+    }
 }
 
